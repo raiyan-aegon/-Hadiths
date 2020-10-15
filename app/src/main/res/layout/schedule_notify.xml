@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
@@ -15,47 +14,45 @@
 
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/title"
+            android:id="@+id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="124dp"
-            android:text="#Hadiths"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="#263560"
+            android:paddingStart="30dp"
+            android:paddingTop="70dp"
+            android:paddingEnd="30dp"
+            android:text="What is your toughest time of the day, when you could use a little extra mindfulness?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#77829A"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/timePicker"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView4"
-            android:layout_width="wrap_content"
+        <TimePicker
+            android:headerBackground="#9888BA"
+            android:numbersSelectorColor="#9888BA"
+            android:id="@+id/timePicker"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:paddingEnd="90dp"
-            android:paddingStart="90dp"
-            android:text="A DAILY DOSE OF HADITHS WHEN YOU NEED IT MOST."
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="#77829A"
-            app:layout_constraintBottom_toTopOf="@+id/get_started"
+            app:layout_constraintBottom_toTopOf="@+id/notifyBT"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/summary" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/get_started"
+            android:id="@+id/notifyBT"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="36dp"
-            android:paddingEnd="80dp"
-            android:paddingStart="80dp"
+            android:paddingStart="40dp"
             android:paddingTop="20dp"
+            android:paddingEnd="40dp"
             android:paddingBottom="20dp"
-            android:text="GET STARTED!"
+            android:text="SCHEDULE A NOTIFICATION"
             android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,6 +63,9 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

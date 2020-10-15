@@ -66,4 +66,7 @@ dependencies {
     //LIVEDATA & //VIEWMODEL
     implementation "android.arch.lifecycle:livedata:1.1.1"
     annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+
+    //DatePicker
+    implementation "com.github.ifr0z:timepickercompat:1.0"
 }
